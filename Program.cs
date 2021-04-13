@@ -13,12 +13,17 @@ namespace VariablesCS
             var today = DateTime.Now;
 
 
-            Console.WriteLine(numberOfCupsOfCoffee + fullName + today);
+            Console.WriteLine($"{numberOfCupsOfCoffee} {fullName} {today}");
 
 
             Console.Write("What is your name? ");
             var username = Console.ReadLine();
             Console.WriteLine("What is up " + username);
+
+            if (username == "Alice")
+            {
+                Console.WriteLine("Congrats your name is Alice");
+            }
 
 
             Console.Write("How old are you? ");
